@@ -1,0 +1,38 @@
+/* Main window */
+QDialog {
+    background-color: #f0f2f5;
+    font-family: 'Segoe UI';
+}
+
+/* Input fields */
+QLineEdit {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    min-width: 250px;
+}
+
+QLineEdit:focus {
+    border-color: #4CAF50;
+}
+
+/* Buttons */
+QPushButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+QPushButton:hover {
+    background-color: #45a049;
+}
+
+/* Checkbox */
+QCheckBox {
+    spacing: 5px;
+    font-size: 14px;
+}

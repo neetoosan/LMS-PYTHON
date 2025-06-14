@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+  <class>MemberDialog</class>
+  <widget class="QDialog" name="MemberDialog">
+    <property name="geometry">
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>500</width>
+        <height>400</height>
+      </rect>
+    </property>
+    <property name="windowTitle">
+      <string>Member Management</string>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+        <widget class="QTabWidget" name="tabWidget">
+          <widget class="QWidget" name="search_tab">
+            <attribute name="title">
+              <string>Search Members</string>
+            </attribute>
+            <layout class="QVBoxLayout" name="verticalLayout_2">
+              <item>
+                <widget class="QLineEdit" name="search_input">
+                  <property name="placeholderText">
+                    <string>Search by name or ID...</string>
+                  </property>
+                </widget>
+              </item>
+              <item>
+                <widget class="QTableWidget" name="members_table">
+                  <column>
+                    <property name="text">
+                      <string>IPPIS NO</string>
+                    </property>
+                  </column>
+                  <column>
+                    <property name="text">
+                      <string>Name</string>
+                    </property>
+                  </column>
+                  <column>
+                    <property name="text">
+                      <string>Contact</string>
+                    </property>
+                  </column>
+                </widget>
+              </item>
+            </layout>
+          </widget>
+          <widget class="QWidget" name="edit_tab">
+            <attribute name="title">
+              <string>Add/Edit</string>
+            </attribute>
+            <layout class="QFormLayout" name="formLayout">
+              <item row="0" column="0">
+                <widget class="QLabel" name="label">
+                  <property name="text">
+                    <string>Full Name:</string>
+                  </property>
+                </widget>
+              </item>
+              <item row="0" column="1">
+                <widget class="QLineEdit" name="name_input"/>
+              </item>
+              <item row="1" column="0">
+                <widget class="QLabel" name="label_2">
+                  <property name="text">
+                    <string>Phone:</string>
+                  </property>
+                </widget>
+              </item>
+              <item row="1" column="1">
+                <widget class="QLineEdit" name="phone_input"/>
+              </item>
+              <item row="2" column="0">
+                <widget class="QLabel" name="label_3">
+                  <property name="text">
+                    <string>Address:</string>
+                  </property>
+                </widget>
+              </item>
+              <item row="2" column="1">
+                <widget class="QTextEdit" name="address_input"/>
+              </item>
+            </layout>
+          </widget>
+        </widget>
+      </item>
+      <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+            <widget class="QPushButton" name="save_btn">
+              <property name="text">
+                <string>Save</string>
+              </property>
+            </widget>
+          </item>
+          <item>
+            <widget class="QPushButton" name="delete_btn">
+              <property name="text">
+                <string>Delete</string>
+              </property>
+            </widget>
+          </item>
+          <item>
+            <widget class="QPushButton" name="close_btn">
+              <property name="text">
+                <string>Close</string>
+              </property>
+            </widget>
+          </item>
+        </layout>
+      </item>
+    </layout>
+  </widget>
+</ui>
